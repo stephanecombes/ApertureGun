@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/navstyle.css">
+		<link rel="stylesheet" type="text/css" href="../css/mainstyle.css">
+		<link rel="icon" href="../img/favicon.ico" />
+		<title>Contact Us</title>
+	</head>
+	<body>
+		<!-- Menu burger-->
+		<div class="burger">
+			<img src="../img/burger.png" alt="burger" id="burg">
+			<div id="menu2">
+				<div><a href="../index.html">Accueil</a></div>
+				<div><a href="../qui-sommes-nous/index.html">Qui sommes nous ?</a></div>
+				<div><a href="../presse/index.html">Presse</a></div>
+				<div><a href="../portalgun/index.html">PortalGun</a></div>
+				<div><a href="../futur-projet/index.html">Autres produits</a></div>
+				<div><a href="../contact/index.html">Contact</a></div>
+				<div><a href="../nous-rejoindre/index.html">Nous rejoindre</a></div>
+				<div><a href="../FAQ/index.html">FAQ</a></div>
+			</div>
+		</div>
+		<!-- Barre de navigation -->
+		<nav>
+			<ul>
+				<li>
+					<a href="../index.html">Accueil</a>
+					<ul>
+						<li><a href="../qui-sommes-nous/index.html">Qui sommes nous ?</a></li>
+						<li><a href="../presse/index.html">Presse</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="../portalgun/index.html">Produits</a>
+					<ul>
+						<li><a href="../portalgun/index.html">PortalGun</a></li>
+						<li><a href="../futur-projet/index.html">Autres produits</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="./contact/index.html">Contacts</a>
+				</li>
+				<li>
+					<a href="../FAQ/index.html">FAQ</a>
+				</li>
+			</ul>
+		</nav>
+
+	<main class="contact-us_main">
+		<div class="contact-us_contact-us">
+			<h2>Vous souhaitez nous contacter, nous faire part de votre attente sur nos produits ? Rien de plus simple : </h2>
+			<p> Remplissez simplement ce formulaire et expliquez nous en quelques mots vos questions, vos impressions, vos appréhensions 
+			et même vos doutes si vous en avez (bien qu'il n'y ait aucune raison d'en avoir). </p>
+			<p>Nous vous encourageons a répondre a toutes les questions, nous sommes actuellement à la recherche de nouveaux sujets de test, 
+			les précédants ayant été remerciés suite a un regrettable accident. Donc montrez-vous impliqué, et peut-être aurez-vous une 
+			chance de faire partie des heureux remplaçants</p>
+		</div>
+		<form action="../form/" method="post">
+			<fieldset class="contact-us_1st_fieldset">
+				<legend> Informations Personnelles </legend>
+					<p><label for="surname"> Nom </label>
+						<input id="surname" name="name" type="text" required></p>
+					<p><label for="firstname"> Prénom </label>
+						<input id="firstname" name="fname" type="text" required></p>
+					<p><label for="bday"> Date de naissance </label>
+						<input id="bday" name="bdate" type="date" required></p>
+					<p><label> Sexe </label>
+						<input id="m" type="radio" name="gender" value="male">
+						<label for="m"> Mâle </label>
+						<input id="f" type="radio" name="gender" value="female"> 
+						<label for="f"> Femelle </label>
+						<input id="u" type="radio" name="gender" value="unknown"> 
+						<label for="u"> Inconnu </label> </p> 
+					<p> Adresse </p>
+					<div class="address">
+						<div>
+							<label for="num"> N° de rue </label>
+							<input id="num" name="numr" type="text" required>
+						</div>
+						<div>
+							<label for="road"> Nom de rue </label>
+							<input id="road" name="roadn" type="text" required>
+						</div>
+						<div>
+							<label for="bat"> Bâtiment </label>
+							<input id="bat" name="building" type="text">
+						</div>
+						<div>
+								<label for="cp"> Code postal </label>
+								<input id="cp" name="codepost" type="text" required>
+						</div>
+						<div>
+								<label for="city"> Ville </label>
+								<input id="city" name="city" type="text" required>
+						</div>
+						<div>
+								<label for="state"> Pays </label>
+								<input id="state" name="country" type="text" required>
+						</div>
+					</div>
+					<div>
+						<p><label for="mail">Em@il</label>
+						<input id="mail" name="mail" type="email" placeholder="yourmail@domain.com" required></p>
+					</div>
+			</fieldset>	
+			<fieldset class="contact-us_2nd_fieldset">
+			<div>
+				<fieldset class="contact-us_infocplt">
+					<legend>Nous y sommes presque !</legend>
+						<!--<p><label for="music"> Quelle genre de musique écoutez-vous ?</label><br>
+							<select id="music" name="music" size="1">
+								<option value="none"> - </option>
+								<option value="classique">Classique</option>
+								<option value="electro">Electro</option>
+								<option value="country">Country</option>
+								<option value="rap">Rap</option> 
+								<option value="jazz">Jazz</option>
+								<option value="rock">Rock</option>
+								<option value="h_rock">Hard Rock</option>
+								<option value="metal">Metal</option>
+								<option value="heavy">Heavy Metal</option>
+								<option value="other">Autre</option>
+								<option value="no_music">Je n'écoute pas de musique</option>
+								<p><input id="other_music" name="otherm" type="text" placeholder="Autre (Veuillez préciser)"></p>
+							<p><input type="checkbox" name="no_music" value="true">Je n'écoute pas de musique</label></p>
+							</select></p>
+						<p><label for="plat"> Quel est votre plat favori?</label><br>
+						<input id="plat" name="plat" type="text" required></p>-->
+						<p>Si vous souhaitez nous rejoindre, merci de répondre à ces quelques questions.</p>
+						<p><label> Avez vous (ou eu) des antécédents médicaux ?</label><br>
+							<input id="m_yes" type="radio" name="m_y-n" value="yes"><label for="m_yes">Oui</label>
+							<input id="m_no" type="radio" name="m_y-n" value="no"><label for="m_no">Non</label></p>
+						<p><label>Avez vous de la famille, des gens pour qui vous comptez ?</label><br>
+							<input id="f_yes" type="radio" name="f_y-n" value="yes"><label for="f_yes">Oui</label>
+							<input id="f_no" type="radio" name="f_y-n" value="no"><label for="f_no">Non</label></p>
+						<p><label>Seriez vous prêt à mourir dans d'atroce soufrances pour faire avancer la science ?</label><br>
+							<input id="d_yes" type="radio" name="d_y-n" value="yes"><label for="d_yes">Oui</label>
+							<input id="d_no" type="radio" name="d_y-n" value="no"><label for="d_no">Non</label></p>
+				</fieldset>
+				<fieldset class="contact-us_motiv">
+					<legend>Votre message ici</legend>
+					<textarea id="motivé" placeholder="Dites- nous ici tout ce que vous voulez nous dire. 
+					N'hésitez surtout pas a nous montrez votre motivation pour venir tester nos produits en avant-première!"></textarea>
+				</fieldset>
+			</div>
+			<input type="checkbox" name="cgu" value="true" required>J'ai lu les <a href="https://www.google.fr/chrome/browser/privacy/eula_text.html">CGU</a><br>
+			</fieldset>
+			<input type="submit" value="Envoyer mon message">
+		</form>
+	</main>
+		<div class="general_false_footer"></div>
+		<footer>
+			<p><a href="https://www.google.fr/chrome/browser/privacy/eula_text.html">EULA</a> Aperture Science Industries - 2017</p>
+		</footer>
+	</body>
+</html>
+
